@@ -163,9 +163,6 @@ fabric.properties
 .idea/**/azureSettings.xml
 
 ### replit ###
-# Replit config file
-.replit
-
 # Replit Nix config file
 replit.nix
 

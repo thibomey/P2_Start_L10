@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "p2oplossingl9"
+name = "p2oplossingl10"
 version = "0.1.0"
-description = "A python version of snake"
+description = "An improved python version of snake"
 authors = ["Tessa"]
 readme = "README.md"
 
