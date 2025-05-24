@@ -21,9 +21,10 @@ class Snake:
         if len(self.lijst_slang) > self.lengte_slang:
             del self.lijst_slang[0]
 
-    def teken(self, venster):
+    def teken(self, venster, kleur_score):
         for segment in self.lijst_slang:
             pygame.draw.rect(venster, kleur_slang, pygame.Rect(segment[0], segment[1], veld_grootte, veld_grootte))
+            pygame.draw.rect(venster, kleur_score, pygame.Rect(segment[0] + 4, segment[1] + 4, veld_grootte - 8, veld_grootte - 8))
 
     def is_buiten_veld(self, breedte, hoogte):
         return self.x >= breedte or self.x < 0 or self.y >= hoogte or self.y < 0
